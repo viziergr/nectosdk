@@ -4,7 +4,7 @@ array = [
         ]
 
 # ouverture du fichier kinetis.txt pour écrire avec la syntaxe et un retour à la ligne tous les 5 itérations
-with open("STM.txt", "r") as f:
+with open("C:/Users/grego/Documents/Git/nectosdk/NewSTM.txt", "r") as f:
     for i, line in enumerate(f):
         if i % 5 == 0:
             array.append(["| " + line.strip() + " | "])
@@ -14,6 +14,6 @@ with open("STM.txt", "r") as f:
         
         
 # écriture de array dans un fichier kinetisFinal.txt
-with open("STMFinal.txt", "w") as f:
+with open("NewSTMFinal.txt", "w") as f:
     for line in array:
         f.write("".join(line) + "\n")
